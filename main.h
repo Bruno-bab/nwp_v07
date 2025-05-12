@@ -22,4 +22,6 @@ protected:
 	void on_paint(HDC hdc) override;
 	void on_command(int id) override;
 	void on_destroy() override;
+	std::wstring name;
+	std::unique_ptr<Gdiplus::Image> image = nullptr;
 };
